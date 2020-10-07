@@ -1,0 +1,52 @@
+
+_
+java:S1192g"IDefine a constant instead of duplicating this literal "activity" 3 times.(ğŠ³Æ
+k	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¦¼ûÿÿÿÿ
+C
+java:S1604V"(Make this anonymous inner class a lambda(áİ—Ûÿÿÿÿÿ
+>
+java:S1604`"(Make this anonymous inner class a lambda(ÄìÕª
+9
+java:S1659"#Declare "small" on a separate line.(‘ËºÂ
+:
+java:S1659"$Declare "medium" on a separate line.(‘ËºÂ
+9
+java:S1659"#Declare "large" on a separate line.(‘ËºÂ
+9
+java:S1659"#Declare "giant" on a separate line.(‘ËºÂ
+?
+java:S1659")Declare "lightActive" on a separate line.(÷§Ü‘
+>
+java:S1659"(Declare "veryActive" on a separate line.(÷§Ü‘
+=
+java:S1185""(Remove this method to simply inherit it.(¥Ë©
+H
+java:S1172'"-Remove this unused method parameter "button".(³ªËşÿÿÿÿ
+M
+java:S19054"2Remove this unnecessary cast to "OnClickListener".(Ó÷ûİùÿÿÿÿ
+P
+java:S1161D":Add the "@Override" annotation above this method signature(¼²Á÷
+œ
+java:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ùıæ²ÿÿÿÿÿ
+N
+java:S1874e"9Remove this use of "PreferenceManager"; it is deprecated.(Ùá¢"
+X
+java:S1874e"CRemove this use of "getDefaultSharedPreferences"; it is deprecated.(Ùá¢"
+T
+java:S1854|"9Remove this useless assignment to local variable "model".(Ø˜‚¥ÿÿÿÿÿ
+T
+java:S1117|"9Rename "model" which hides the field declared at line 32.(Ø˜‚¥ÿÿÿÿÿ
+U
+java:S1874|":Remove this use of "ViewModelProviders"; it is deprecated.(Ø˜‚¥ÿÿÿÿÿ
+E
+java:S1874|"*Remove this use of "of"; it is deprecated.(Ø˜‚¥ÿÿÿÿÿ
+E
+java:S1481|"*Remove this unused "model" local variable.(Ø˜‚¥ÿÿÿÿÿ
+D
+java:S1068 ")Remove this unused "model" private field.(áœø²ÿÿÿÿÿ
+Q	java:S125$"<This block of commented-out lines of code should be removed.(ÎĞÙÊ
+Q	java:S125("<This block of commented-out lines of code should be removed.(İ—ê—
+V	java:S1257"<This block of commented-out lines of code should be removed.(ûÄÜıÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ŒÆ£²øÿÿÿÿ
+O
+java:S1144'"4Remove this unused private "updateViewModel" method.(³ªËşÿÿÿÿ

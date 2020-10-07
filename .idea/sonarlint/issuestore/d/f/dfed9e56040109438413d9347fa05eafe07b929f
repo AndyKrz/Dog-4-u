@@ -1,0 +1,22 @@
+
+k	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ó¸Ÿåùÿÿÿÿ
+C
+java:S1604+"(Make this anonymous inner class a lambda(´««çıÿÿÿÿ
+>
+java:S16043"(Make this anonymous inner class a lambda(›à³ç
+A
+java:S1659"&Declare "noMatter" on a separate line.(éÃôûÿÿÿÿ
+P
+java:S1161=":Add the "@Override" annotation above this method signature(¼²Á÷
+N
+java:S1874G"9Remove this use of "PreferenceManager"; it is deprecated.(Ùá¢"
+X
+java:S1874G"CRemove this use of "getDefaultSharedPreferences"; it is deprecated.(Ùá¢"
+T
+java:S1117V"9Rename "model" which hides the field declared at line 32.(Ø˜‚¥ÿÿÿÿÿ
+U
+java:S1874V":Remove this use of "ViewModelProviders"; it is deprecated.(Ø˜‚¥ÿÿÿÿÿ
+E
+java:S1874V"*Remove this use of "of"; it is deprecated.(Ø˜‚¥ÿÿÿÿÿ
+D
+java:S1068 ")Remove this unused "model" private field.(áœø²ÿÿÿÿÿ

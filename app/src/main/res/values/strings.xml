@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Dog4U App</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_home_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_dashboard_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_notifications_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="title_home">Home</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="_1_what_dog_size_do_you_want">1.What dog size do you want?</string>
+    <string name="silent">Silent</string>
+    <string name="find_your_perfect_dog">Find Your Perfect Dog</string>
+
+    <string name="chihuahua">Chihuahua</string>
+    <string name="bulldog">Bulldog</string>
+    <string name="chow">Chow Chow</string>
+    <string name="husky">Husky</string>
+    <string name="irlandzki">Wilczarz Irlandzki</string>
+    <string name="niemiecki">Dog Niemiecki</string>
+    <string name="owczarek">Owczarek Niemiecki</string>
+    <string name="spaniel">Spaniel Angielski</string>
+    <string name="york">Yorkshire Terrier</string>
+    <string name="lazy">Lazy</string>
+
+</resources>

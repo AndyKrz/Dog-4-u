@@ -1,0 +1,25 @@
+
+`
+java:S1192O"JDefine a constant instead of duplicating this literal "no matter" 3 times.(ûŠ€¾
+a
+java:S1192S"FDefine a constant instead of duplicating this literal "large" 3 times.(•â™Ÿüÿÿÿÿ
+c
+java:S11925"MDefine a constant instead of duplicating this literal "light active" 5 times.(ˆË±Â
+V	java:S110"<This class has 9 parents which is greater than 5 authorized.(ÈÇŠèøÿÿÿÿ
+>
+java:S1604w"(Make this anonymous inner class a lambda(•Ë¾É
+y
+java:S1450"^Remove the "switchImageView" field and declare it as a local variable in the relevant methods.(µâÂüÿÿÿÿ
+˜
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¡é††
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¨Œşÿÿÿÿ
+T
+java:S1874"9Remove this use of "PreferenceManager"; it is deprecated.(±‚ËÙúÿÿÿÿ
+^
+java:S1874"CRemove this use of "getDefaultSharedPreferences"; it is deprecated.(±‚ËÙúÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(İûÉ†şÿÿÿÿ
+V	java:S125$"<This block of commented-out lines of code should be removed.(´ğÍ¾ûÿÿÿÿ
+Q	java:S125:"<This block of commented-out lines of code should be removed.(ÄÏœ§
+Q	java:S125="<This block of commented-out lines of code should be removed.(œ¢ü
+Q	java:S125A"<This block of commented-out lines of code should be removed.(¬å’º

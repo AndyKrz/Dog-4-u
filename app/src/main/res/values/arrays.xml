@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="random_images">
+        <item>@drawable/chow</item>
+        <item>@drawable/chihuahua</item>
+        <item>@drawable/husky</item>
+        <item>@drawable/bulldog</item>
+        <item>@drawable/irlandzki</item>
+        <item>@drawable/owczarek</item>
+        <item>@drawable/labrador</item>
+        <item>@drawable/spaniel</item>
+        <item>@drawable/niemiecki</item>
+        <item>@drawable/york</item>
+    </integer-array>
+</resources>
