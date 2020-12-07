@@ -19,11 +19,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-public class ChildrenFragment extends Fragment {
+public class AttitudeOnChildren extends Fragment {
 
   ViewPager viewPager;
-  TextView textView4;
-  RadioGroup radioGroup;
+  TextView describeOfBehavior;
+  RadioGroup behaviourSelector;
   RadioButton like, noMatter;
 
   @Override
@@ -31,7 +31,7 @@ public class ChildrenFragment extends Fragment {
       LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState
   ) {
-    View rootView = inflater.inflate(R.layout.fragment_home_fourth, container, false);
+    View rootView = inflater.inflate(R.layout.fragment_behavior, container, false);
 
     Button pButton2 = rootView.findViewById(R.id.pButton2);
     pButton2.setOnClickListener(v -> {
@@ -45,22 +45,24 @@ public class ChildrenFragment extends Fragment {
     });
     return rootView;
   }
+ 
 
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 
-    radioGroup = view.findViewById(R.id.childrenList);
-    textView4 = view.findViewById(R.id.textView4);
+    behaviourSelector = view.findViewById(R.id.childrenList);
+    describeOfBehavior = view.findViewById(R.id.textView4);
     like = view.findViewById(R.id.like);
     noMatter = view.findViewById(R.id.noMatter);
 
+
     View.OnClickListener childrenDog = v -> {
       SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
-      if(like.isChecked()) {
-        textView4.setText("Your kid can cuddle dog whole the time!");
+      if (like.isChecked()) {
+        describeOfBehavior.setText("Your kid can cuddle dog whole the time!");
         sharedPref.edit().putString("children", "Like").commit();
-      }else if (noMatter.isChecked()) {
-        textView4.setText("Ambivalent attitude but it doesn't mean that they don't like them");
+      } else if (noMatter.isChecked()) {
+        describeOfBehavior.setText("Ambivalent attitude but it doesn't mean that they don't like them");
         sharedPref.edit().putString("children", "No Matter").commit();
       }
     };

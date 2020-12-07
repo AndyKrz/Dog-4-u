@@ -8,16 +8,20 @@
         android:background="@drawable/background"
         tools:context=".ui.home.HomeFragment" android:id="@+id/home"
 >
-
     <Button
             android:id="@+id/button_home"
             android:layout_width="74dp"
             android:layout_height="79dp"
             android:text="START"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="400dp"
             android:layout_marginEnd="160dp" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="160dp"
             android:background="@drawable/pngegg"
             android:textColor="@color/design_default_color_on_secondary"
-            android:textStyle="bold"/>
+            android:textStyle="bold|italic" android:typeface="monospace"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

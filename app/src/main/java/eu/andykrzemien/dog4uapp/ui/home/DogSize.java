@@ -19,10 +19,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-public class SizeFragment extends Fragment {
+public class DogSize extends Fragment {
 
   ViewPager viewPager;
-  TextView textView;
+  TextView sizeDescription;
   RadioButton miniature,small,medium,large,giant;
 
   @Override
@@ -30,7 +30,7 @@ public class SizeFragment extends Fragment {
       LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState
   ) {
-    View rootView = inflater.inflate(R.layout.fragment_home_second, container, false);
+    View rootView = inflater.inflate(R.layout.fragment_size, container, false);
     Button button_home_second = rootView.findViewById(R.id.button_home_second);
     button_home_second.setOnClickListener(v -> {
       viewPager = Objects.requireNonNull(getActivity()).findViewById(R.id.viewPager);
@@ -38,41 +38,42 @@ public class SizeFragment extends Fragment {
     });
     return rootView;
 }
-  public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+  public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)  {
     super.onViewCreated(view, savedInstanceState);
 
-    textView = view.findViewById(R.id.textView);
-    RadioGroup sizeList = view.findViewById(R.id.sizeList);
+    sizeDescription = view.findViewById(R.id.textView);
+    RadioGroup sizeSelector = view.findViewById(R.id.sizeList);
     miniature = view.findViewById(R.id.miniature);
     small = view.findViewById(R.id.small);
     medium = view.findViewById(R.id.medium);
     large = view.findViewById(R.id.large);
     giant = view.findViewById(R.id.giant);
 
-    sizeList.setOnCheckedChangeListener((group, checkedId) -> {
+    sizeSelector.setOnCheckedChangeListener((group, checkedId) -> {
 
       RadioButton thisButton = Objects.requireNonNull(getView()).findViewById(checkedId);
       SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
       sharedPref.edit().putString("size", thisButton.getText().toString()).commit();
          });
     View.OnClickListener optionOnClickListener = v -> {
-      textView.setText("Choose activity");
+      sizeDescription.setText("Choose activity");
       SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
+
       if(miniature.isChecked()){
         sharedPref.edit().putString("size", "Miniature").commit();
-        textView.setText("Dog weights less than 3kg");
-      } else if(small.isChecked()) {
+        sizeDescription.setText("Dog weights less than 3kg");
+      } if(small.isChecked()) {
         sharedPref.edit().putString("size", "Small").commit();
-        textView.setText("Dog weights less than 10kg.");
-      } else if(medium.isChecked()){
+        sizeDescription.setText("Dog weights less than 10kg.");
+      }  if(medium.isChecked()){
         sharedPref.edit().putString("size", "Medium").commit();
-        textView.setText("Dog weights between 11 and 25kg.");
-      } else if(large.isChecked()){
+        sizeDescription.setText("Dog weights between 11 and 25kg.");
+      }if(large.isChecked()){
         sharedPref.edit().putString("size", "Large").commit();
-        textView.setText("Dog weights between 26 and 39kg.");
-      } else if(giant.isChecked()){
+        sizeDescription.setText("Dog weights between 26 and 39kg.");
+      } if(giant.isChecked()){
         sharedPref.edit().putString("size", "Giant").commit();
-        textView.setText("Dog weights more than 40kg.");
+        sizeDescription.setText("Dog weights more than 40kg.");
       }
     };
     miniature.setOnClickListener(optionOnClickListener);

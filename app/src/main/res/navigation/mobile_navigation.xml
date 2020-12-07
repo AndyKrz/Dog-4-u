@@ -10,16 +10,16 @@
     <activity android:id="@+id/resultActivity" android:name="eu.andykrzemien.dog4uapp.ResultActivity"
               android:label="ResultActivity"/>
     <fragment android:id="@+id/homeSecondFragment"
-              android:name="eu.andykrzemien.dog4uapp.ui.home.SizeFragment"
-              android:label="fragment_home_second" tools:layout="@layout/fragment_home_second">
+              android:name="eu.andykrzemien.dog4uapp.ui.home.DogSize"
+              android:label="fragment_home_second" tools:layout="@layout/fragment_size">
         <argument android:name="RadioGroup" app:argType="integer[]"/>
         <action android:id="@+id/action_homeSecondFragment_to_homeThirdFragment"
                 app:destination="@id/homeThirdFragment" app:launchSingleTop="false"/>
     </fragment>
     <fragment android:id="@+id/homeThirdFragment"
-              android:name="eu.andykrzemien.dog4uapp.ui.home.ActivityFragment"
-              android:label="fragment_home_third" tools:layout="@layout/fragment_home_third"/>
+              android:name="eu.andykrzemien.dog4uapp.ui.home.DogActivity"
+              android:label="fragment_home_third" tools:layout="@layout/fragment_activity"/>
     <fragment android:id="@+id/homeFourthFragment"
-              android:name="eu.andykrzemien.dog4uapp.ui.home.ChildrenFragment"
-              android:label="fragment_home_fourth" tools:layout="@layout/fragment_home_fourth"/>
+              android:name="eu.andykrzemien.dog4uapp.ui.home.AttitudeOnChildren"
+              android:label="fragment_home_fourth" tools:layout="@layout/fragment_behavior"/>
 </navigation>

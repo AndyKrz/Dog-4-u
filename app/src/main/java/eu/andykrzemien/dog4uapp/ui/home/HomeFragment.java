@@ -18,7 +18,7 @@ public class HomeFragment extends Fragment{
 
   public View onCreateView(@NonNull LayoutInflater inflater,
                            ViewGroup container, Bundle savedInstanceState) {
-    View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+    View rootView = inflater.inflate(R.layout.fragment_start, container, false);
 
     Button button_home = rootView.findViewById(R.id.button_home);
     button_home.setOnClickListener(v -> {

@@ -20,11 +20,11 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-public class ActivityFragment extends Fragment {
+public class DogActivity extends Fragment {
 
   ViewPager viewPager;
-  TextView textView3,joker;
-  RadioGroup radioGroup;
+  TextView activityDescription, joker;
+  RadioGroup activitySelector;
   RadioButton lazy, lightActive, veryActive;
   Button jokeButton;
 
@@ -33,7 +33,7 @@ public class ActivityFragment extends Fragment {
       LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState
   ) {
-    View rootView = inflater.inflate(R.layout.fragment_home_third, container, false);
+    View rootView = inflater.inflate(R.layout.fragment_activity, container, false);
     Button button_home_second2 = rootView.findViewById(R.id.button_home_second2);
     button_home_second2.setOnClickListener(v -> {
       viewPager = Objects.requireNonNull(getActivity()).findViewById(R.id.viewPager);
@@ -48,11 +48,12 @@ public class ActivityFragment extends Fragment {
     return rootView;
 
   }
+
   public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
 
-    textView3 = view.findViewById(R.id.textView3);
-    radioGroup = view.findViewById(R.id.activityList);
+    activityDescription = view.findViewById(R.id.textView3);
+    activitySelector = view.findViewById(R.id.activityList);
     lazy = view.findViewById(R.id.lazy);
     lightActive = view.findViewById(R.id.lightActive);
     veryActive = view.findViewById(R.id.veryActive);
@@ -80,7 +81,8 @@ public class ActivityFragment extends Fragment {
         + "A: A New Yorkie!");
     jokers.add("What kind of dog chases anything red?\n" + "A Bulldog.");
     jokers.add("What do you get if you cross a Beatle and an Australian dog?\n" + "Dingo Starr!");
-    jokers.add("What do you get when you cross a dog and a calculator?\n" +  "A friend you can count on.");
+    jokers.add(
+        "What do you get when you cross a dog and a calculator?\n" + "A friend you can count on.");
 
     jokeButton.setOnClickListener(v -> {
       Random random = new Random();
@@ -88,21 +90,21 @@ public class ActivityFragment extends Fragment {
       joker.setText(jokers.get(index));
     });
 
-    radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
+    activitySelector.setOnCheckedChangeListener((group, checkedId) -> {
 
     });
     View.OnClickListener optionOnClickListener = v -> {
-      textView3.setText("Choose activity");
+      activityDescription.setText("Choose activity");
       SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
       if (lazy.isChecked()) {
         sharedPref.edit().putString("activity", "Lazy").commit();
-        textView3.setText("Dog don't need a long walks.");
+        activityDescription.setText("Dog don't need a long walks.");
       } else if (lightActive.isChecked()) {
         sharedPref.edit().putString("activity", "Light Active").commit();
-        textView3.setText("Dog need to go outside for at least one hour per day.");
+        activityDescription.setText("Dog need to go outside for at least one hour per day.");
       } else if (veryActive.isChecked()) {
         sharedPref.edit().putString("activity", "Very Active").commit();
-        textView3.setText("Dog needs a lot of walking, running, at least 2h on the field.");
+        activityDescription.setText("Dog needs a lot of walking, running, at least 2h on the field.");
       }
     };
     lazy.setOnClickListener(optionOnClickListener);

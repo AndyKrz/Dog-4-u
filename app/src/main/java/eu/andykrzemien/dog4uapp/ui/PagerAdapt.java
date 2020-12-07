@@ -1,9 +1,9 @@
 package eu.andykrzemien.dog4uapp.ui;
 
-import eu.andykrzemien.dog4uapp.ui.home.ChildrenFragment;
+import eu.andykrzemien.dog4uapp.ui.home.AttitudeOnChildren;
 import eu.andykrzemien.dog4uapp.ui.home.HomeFragment;
-import eu.andykrzemien.dog4uapp.ui.home.SizeFragment;
-import eu.andykrzemien.dog4uapp.ui.home.ActivityFragment;
+import eu.andykrzemien.dog4uapp.ui.home.DogSize;
+import eu.andykrzemien.dog4uapp.ui.home.DogActivity;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -26,11 +26,11 @@ public class PagerAdapt extends FragmentPagerAdapter{
       case 0:
         return new HomeFragment();
       case 1:
-        return new SizeFragment();
+        return new DogSize();
       case 2:
-        return new ActivityFragment();
+        return new DogActivity();
       case 3:
-        return new ChildrenFragment();
+        return new AttitudeOnChildren();
       default:
         return null;
     }

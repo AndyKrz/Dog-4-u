@@ -6,7 +6,7 @@
         android:id="@+id/dogChildren"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.home.ChildrenFragment" android:background="@drawable/threepes">
+        tools:context=".ui.home.AttitudeOnChildren" android:background="@drawable/threepes">
 
     <TextView
             android:id="@+id/textView4"
